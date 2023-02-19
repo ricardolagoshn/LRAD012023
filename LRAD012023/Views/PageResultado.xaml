@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LRAD012023.Views.PageResultado">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Frame BackgroundColor="#2196F3" Padding="20" CornerRadius="0">
+                <Label Text="Resutado" HorizontalTextAlignment="Center" TextColor="White" FontSize="30"/>
+            </Frame>
+
+            <Label Text="{Binding nombres}"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+
+
+            <Label Text="{Binding apellidos}"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

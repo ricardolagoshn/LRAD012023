@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LRAD012023.Views.PageAlum">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Gainsboro">
+
+            <Entry x:Name="txtnombre" 
+                   Placeholder="Nombres" 
+                   Keyboard="Text"
+                   TextColor="Green"
+                   Margin="10,10,10,0"/>
+
+            <Entry x:Name="txtapellidos" Placeholder="Apellidos" Keyboard="Text" 
+                   Margin="10,10,10,0"/>
+
+            <Picker Title="Seleccione Genero" TitleColor="Blue" Margin="10,10,10,0" x:Name="cbsexo">
+                 <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Femenino</x:String>
+                        <x:String>Masculino</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Entry x:Name="txtdireccion" Placeholder="Direccion" Keyboard="Text"
+                   Margin="10,10,10,0"/>
+
+            <Button x:Name="btnmostrar" Text="Mostrar" Clicked="btnmostrar_Clicked"                  
+                    Margin="10,10,10,0"
+                    BackgroundColor="LightSalmon"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
