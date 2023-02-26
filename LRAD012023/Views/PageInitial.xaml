@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LRAD012023.Views.PageInitial">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Agregar Alumno"
+                     Clicked="ToolbarItem_Clicked"/>
+
+        <ToolbarItem Text="Mapa"
+                     Clicked="ToolbarItem_Clicked_1"/>
+
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Gray">
+
+            <CollectionView x:Name="listaalums"
+                            Margin="15"
+                            SelectionMode="Single"
+                            SelectionChanged="listaalums_SelectionChanged"
+                            BackgroundColor="AntiqueWhite">
+                
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Vertical" ItemSpacing="10" />
+                </CollectionView.ItemsLayout>
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <Label Text="{Binding id}" HorizontalOptions="Start" />
+
+                            <Label Text="{Binding nombres}" HorizontalOptions="Start" />
+
+                            <Label Text="{Binding apellidos}" HorizontalOptions="Start" />
+
+                            <Image Source="descarga.jfif" WidthRequest="96" HeightRequest="96" HorizontalOptions="Start"/> 
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+                
+            </CollectionView>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -4,5 +4,12 @@
              x:Class="LRAD012023.App">
     <Application.Resources>
 
+        <!-- Colors -->
+        <Color x:Key="AppPrimaryColor">#1976D2</Color>
+        <Color x:Key="AppBackgroundColor">AliceBlue</Color>
+        <Color x:Key="PrimaryColor">Black</Color>
+        <Color x:Key="SecondaryColor">White</Color>
+        <Color x:Key="TertiaryColor">Silver</Color>
+
     </Application.Resources>
 </Application>

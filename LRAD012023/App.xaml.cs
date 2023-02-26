@@ -28,7 +28,7 @@ namespace LRAD012023
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new Views.PageAlum());
+            MainPage = new NavigationPage(new Views.PageInitial());
         }
 
         protected override void OnStart()
