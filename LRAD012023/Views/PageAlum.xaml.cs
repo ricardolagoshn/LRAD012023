@@ -28,6 +28,11 @@ namespace LRAD012023.Views
             };
 
 
+            if (await App.DBAlum.SaveAlum(alum) > 0)
+                await DisplayAlert("Aviso", "Alumno Ingresado", "OK");
+            else
+                await DisplayAlert("Aviso", "Error", "OK");
+
             var page = new Views.PageResultado();
             page.BindingContext= alum;
             await Navigation.PushAsync(page);
