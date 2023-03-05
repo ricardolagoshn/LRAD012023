@@ -7,7 +7,7 @@
         <ToolbarItem Text="Agregar Alumno"
                      Clicked="ToolbarItem_Clicked"/>
 
-        <ToolbarItem Text="Mapa"
+        <ToolbarItem Text="Mi Ubicacion"
                      Clicked="ToolbarItem_Clicked_1"/>
 
     </ContentPage.ToolbarItems>

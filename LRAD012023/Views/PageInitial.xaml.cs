@@ -25,7 +25,8 @@ namespace LRAD012023.Views
 
         private void ToolbarItem_Clicked_1(object sender, EventArgs e)
         {
-
+            var pagemapa = new Views.PageMaps();
+            Navigation.PushAsync(pagemapa);
         }
 
         private void listaalums_SelectionChanged(object sender, SelectionChangedEventArgs e)

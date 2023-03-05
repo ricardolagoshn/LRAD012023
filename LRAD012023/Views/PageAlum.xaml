@@ -5,6 +5,12 @@
     <ContentPage.Content>
         <StackLayout BackgroundColor="Gainsboro">
 
+            <Image x:Name="foto" WidthRequest="200" HeightRequest="200" BackgroundColor="BlueViolet" />
+
+            <Button x:Name="btnfoto" Text="Tomar Foto" Clicked="btnfoto_Clicked"                  
+                    Margin="30,10,30,0"
+                    BackgroundColor="LightSalmon"/>
+
             <Entry x:Name="txtnombre" 
                    Placeholder="Nombres" 
                    Keyboard="Text"
@@ -26,7 +32,13 @@
             <Entry x:Name="txtdireccion" Placeholder="Direccion" Keyboard="Text"
                    Margin="10,10,10,0"/>
 
-            <Button x:Name="btnmostrar" Text="Mostrar" Clicked="btnmostrar_Clicked"                  
+            <Entry x:Name="txtlatitud" Placeholder="Latitud" Keyboard="Text" 
+                   Margin="10,10,10,0" IsEnabled="false"/>
+
+            <Entry x:Name="txtlongitud" Placeholder="Longitud" Keyboard="Text" 
+                   Margin="10,10,10,0" IsEnabled="false"/>
+
+            <Button x:Name="btnmostrar" Text="Guardar" Clicked="btnmostrar_Clicked"                  
                     Margin="10,10,10,0"
                     BackgroundColor="LightSalmon"/>
 

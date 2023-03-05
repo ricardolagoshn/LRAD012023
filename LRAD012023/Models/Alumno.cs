@@ -20,6 +20,6 @@ namespace LRAD012023.Models
 
         [MaxLength(300)]
         public string direccion { get; set;}
-        public Byte[] foto { get; set; }
+        public String foto { get; set; }
     }
 }
